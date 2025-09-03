@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VBO</title>
+
+  <!-- ✅ Google Client ID -->
+  <meta name="google-signin-client_id" content="224714556804-81spvp5794l9rfrslif4o27k4u5fr1ig.apps.googleusercontent.com" />
+
+  <style>
+    body { 
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; 
+      display:flex; 
+      align-items:center; 
+      justify-content:center; 
+      min-height:100vh; 
+      margin:0; 
+      background:#fafafa;
+    }
+    .card { 
+      width: 420px; 
+      padding: 24px; 
+      border: 1px solid #e5e7eb; 
+      border-radius: 16px; 
+      box-shadow: 0 10px 30px rgba(0,0,0,.05); 
+      background:white;
+    }
+    h1 { font-size: 20px; margin: 0 0 8px; }
+    p { color:#4b5563; margin: 0 0 16px; }
+    #status { font-size: 14px; margin-top: 8px; color:#111827; }
+    #gbtn { margin-top: 12px; display:inline-block; }
+    .spinner { 
+      width:22px; height:22px; 
+      border:3px solid #e5e7eb; 
+      border-top-color:#111827; 
+      border-radius:50%; 
+      animation: spin 1s linear infinite; 
+      display:inline-block; 
+      vertical-align:middle; 
+    }
+    @keyframes spin { to { transform: rotate(360deg);} }
+    .row { display:flex; gap:8px; align-items:center; }
+  </style>
+
+  <!-- Google Identity Services -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="card">
+    <h1>Hold on !!</h1>
+    <p>We are loading for you, it may take few seconds..</p>
+    <div class="row">
+      <span class="spinner"></span>
+      <span id="status">Initializing…</span>
+    </div>
+    <div id="gbtn" aria-label="Sign in with Google" style="min-height:48px"></div>
+  </div>
+</body>
+</html>
