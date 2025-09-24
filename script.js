@@ -2,7 +2,7 @@
 const CLIENT_ID = '224714556804-81spvp5794l9rfrslif4o27k4u5fr1ig.apps.googleusercontent.com';
 const GAS_URL = 'https://script.google.com/macros/s/AKfycbzhGqwlkWCJOJBXNRQ0qD-KC_Ws02UQ3Nti8b9x8_EEb7wMSxTMgXRc4GkHlYpkZ5OCTg/exec';
 const FALLBACK_URL = 'https://www.google.com';
-const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours - change this value to adjust the limit
+const CACHE_DURATION = 4320 * 60 * 60 * 1000; // 4320 hours(1 year) - change this value to adjust the limit
 // ===========================================
 
 const statusEl = () => document.getElementById('status');
