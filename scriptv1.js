@@ -1,5 +1,5 @@
 // ===== FORCE RESET USING VERSION =====
-const RESET_VERSION = "v1";  // 👉 Next time change to "v2", "v3"...
+const RESET_VERSION = "v2";  // 👉 force logoutto "v2", "v3"...
 try {
   const currentVersion = localStorage.getItem("reset_version");
   if (currentVersion !== RESET_VERSION) {
